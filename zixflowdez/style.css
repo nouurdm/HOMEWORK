@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    /* Suggested Palette */
+    /* You still can create or choose your own colors */
+    --mustard: hsla(44, 96%, 69%, 1);
+    --periwinkle: hsla(232, 92%, 86%, 1);
+    --emerald: hsla(139, 50%, 64%, 1);
+    --shadow-grey: hsla(240, 9%, 10%, 1);
+    --white: hsla(0, 0%, 100%, 1);
+    --sweet-salmon: hsla(8, 100%, 77%, 1);
+    --enzos-fur: rgb(230, 229, 229);    
+
+    --fontFamily: "Arvo", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+header,
+.middle {
+    background-color: var(--emerald);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    img {
+        height: 28px;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        list-style: none;
+        padding: 0px;
+        margin-top: -8px;
+        a {
+            text-decoration: none;
+            font-family: var(--fontFamily);
+            color: var(--shadow-grey);
+            font-size: 13px;
+            font-weight: bold;
+        }
+    }
+}
+
+#platform:hover,
+#resourses:hover,
+#pricing:hover,
+#loginin:hover {
+    background-color: rgb(178, 151, 151);
+    border: 1px solid var(--periwinkle);
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0px 5px 10px var(--periwinkle);
+}
+
+
+.nav-end {
+    display: flex;
+    gap: 15px;
+    a {
+        text-decoration: none;
+        font-family: var(--fontFamily);
+        color: var(--shadow-grey);
+        margin-top: 2px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .create-btn {
+        background-color: black;
+        font-size: 10px;
+        color: white;
+        padding: 10px 18px;
+        border-radius: 8px;
+        border: none;
+        margin-top: -6px;
+        font-family: var(--fontFamily);
+        font-weight: bold;
+    }
+}
+
+
+main {
+    font-family: var(--fontFamily);
+    font-size: 13px;
+}
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    h1 {
+        display: flex;
+        align-items: center;
+        font-size: 37px;
+        span {
+            background-color: var(--periwinkle);
+            border-radius: 8px;
+            padding: 0px 8px;
+        }
+    }
+}
+.middle-text {
+    font-size: 13px;
+    max-width: 500px;
+    margin: 10px 0 20px 0;
+    line-height: 1.6;
+}
+
+.join-btn,
+.learn-btn {
+    padding: 15px 15px;
+    border-radius: 6px;
+    border: none;
+    font-family: var(--fontFamily);
+    font-size: 12px;
+    margin: 6px;
+}
+.join-btn:hover {
+    background-color: rgb(204, 204, 204);
+    color: black;
+}
+.learn-btn:hover {
+    background-color: rgb(56, 54, 54);
+    color: rgb(255, 253, 253);
+}
+.join-btn {
+    background-color: black;
+    color: white;
+}
+
+
+.impact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 20px;
+    h2 {
+        font-size: 32px;
+    }
+}
+.impact:hover{
+    text-decoration: underline;
+}
+
+
+.story {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 30px 20px;
+    background-color: var(--enzos-fur);
+    border-radius: 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    h2 {
+        font-size: 32px;
+    }
+    p {
+        font-size: 13px;
+        max-width: 500px;
+        margin: 10px 0 20px 0;
+        line-height: 1.6;
+    }
+}
+
+
+.story:hover {
+    box-shadow: 0px 5px 10px var(--periwinkle);
+}
+.pic img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+}
+
+
+.values-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 70px 10px 70px 40px;
+    p {
+        font-size: 13px;
+        max-width: 400px;
+        line-height: 1.6;
+    }
+    h2 {
+        font-size: 49px;
+    }
+}
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 40px 40px;
+    .value-card {
+        border: 2px solid var(--enzos-fur);
+        border-radius: 10px;
+        padding: 30px 25px 25px 30px;
+        h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            margin-left: px;
+        }
+        p {
+            font-size: 13px;
+            line-height: 1.6;
+        }
+    }
+}
+.value-card:hover {
+    box-shadow: 0px 5px 10px var(--periwinkle);
+}
+
+
+article>img {
+    width: 30px;
+    margin-bottom: 20px;
+}
+#secondcard {
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+#thirdcard {
+    margin-top: 40px;
+    margin-bottom: -40px;
+}
+#fifthcard {
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+#sixthcard {
+    margin-top: 40px;
+    margin-bottom: -40px;
+}
+
+
+#people-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    padding: 40px;
+    justify-content: center;
+    margin: 10px 10px;
+}
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 120px;
+    gap: 8px;
+    padding: 8px 8px;
+}
+.person:hover {
+    box-shadow: 0px 5px 10px var(--periwinkle);
+    border-radius: 20px;
+}
+img {
+    width: 100%;
+    border-radius: 12px;
+}
+h2 {
+    font-size: 15px;
+    font-family: var(--fontFamily);
+    gap: 20px;
+}
+
+.tm-btn-container {
+    display: flex;
+    justify-content: center;
+}
+.join-our-tm {
+    background-color: white;
+    padding: 15px 15px;
+    border-radius: 6px;
+    border-color: rgb(194, 183, 183);
+    font-family: var(--fontFamily);
+    font-size: 12px;
+}
+
+
+@media screen and (width < 400px) {
+    #people-container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        img {
+            width: 100%;
+        }
+    }
+}
+@media screen and (width > 400px) and (width < 700px) {
+    #people-container {
+        grid-template-columns: repeat(3, 1fr);
+
+        img {
+            width: 100%;
+        }
+    }
+}
