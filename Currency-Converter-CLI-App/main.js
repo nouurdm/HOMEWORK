@@ -29,7 +29,7 @@ switch (command) {
 function addTransaction(username, curr, val) {
     const rate = RATES[curr];
     if (!rate) {
-        console.log(" Invalid currency! Use 'euro' or 'dollar'.");
+        console.log(" Invalid currency, Use 'euro' or 'dollar'.");
         return;
     }
 
@@ -40,6 +40,6 @@ function addTransaction(username, curr, val) {
 
     fs.appendFileSync(sourceFile, logEntry);
 
-    console.log(` Success! ${val} ${curr} converted to ${converted} DZD and saved to ${sourceFile}`);
+    console.log(`${val} ${curr} converted to ${converted} DZD and saved to ${sourceFile}`);
 }
 
